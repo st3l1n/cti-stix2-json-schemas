@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -17,10 +17,10 @@
             "attack-pattern"
           ]
         },
-        "aliases" : {
-          "type" : "array",
-          "items" : {
-            "type" : "string"
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
           },
           "description": "Alternative names used to identify this Attack Pattern."
         },
@@ -40,7 +40,7 @@
           "type": "array",
           "description": "The list of kill chain phases for which this attack pattern is used.",
           "items": {
-            "$ref": "../common/kill-chain-phase.json"
+            "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/kill-chain-phase.json"
           },
           "minItems": 1
         }

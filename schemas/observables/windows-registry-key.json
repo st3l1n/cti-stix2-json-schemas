@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/cyber-observable-core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -23,7 +23,9 @@
         },
         "key": {
           "type": "string",
-          "not": {"pattern": "^HKLM|HKCC|HKCR|HKCU|HKU|hklm|hkcc|hkcr|hkcu|hku"},
+          "not": {
+            "pattern": "^HKLM|HKCC|HKCR|HKCU|HKU|hklm|hkcc|hkcr|hkcu|hku"
+          },
           "description": "Specifies the full registry key including the hive."
         },
         "values": {
@@ -34,7 +36,7 @@
           "description": "Specifies the values found under the registry key."
         },
         "modified_time": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "Specifies the last date/time that the registry key was modified."
         },
         "creator_user_ref": {
@@ -49,11 +51,31 @@
     }
   ],
   "anyOf": [
-    { "required": ["key"] },
-    { "required": ["values"] },
-    { "required": ["modified"] },
-    { "required": ["creator_user_ref"] },
-    { "required": ["number_of_subkeys"] }
+    {
+      "required": [
+        "key"
+      ]
+    },
+    {
+      "required": [
+        "values"
+      ]
+    },
+    {
+      "required": [
+        "modified"
+      ]
+    },
+    {
+      "required": [
+        "creator_user_ref"
+      ]
+    },
+    {
+      "required": [
+        "number_of_subkeys"
+      ]
+    }
   ],
   "definitions": {
     "windows-registry-value-type": {
@@ -89,9 +111,21 @@
         }
       },
       "anyOf": [
-        { "required": ["name"] },
-        { "required": ["data"] },
-        { "required": ["data_type"] }
+        {
+          "required": [
+            "name"
+          ]
+        },
+        {
+          "required": [
+            "data"
+          ]
+        },
+        {
+          "required": [
+            "data_type"
+          ]
+        }
       ]
     }
   }

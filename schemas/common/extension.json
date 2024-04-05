@@ -9,7 +9,11 @@
       "$ref": "#/definitions/extension-type-enum"
     }
   },
-  "allOf": [{ "$ref": "../common/properties.json" }],
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/properties.json"
+    }
+  ],
   "required": [
     "extension_type"
   ],

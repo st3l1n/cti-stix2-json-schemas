@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -38,11 +38,11 @@
           "minItems": 1
         },
         "first_seen": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The time that this Intrusion Set was first seen."
         },
         "last_seen": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The time that this Intrusion Set was last seen."
         },
         "goals": {

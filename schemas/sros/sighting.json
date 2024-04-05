@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -21,16 +21,16 @@
           "title": "id",
           "pattern": "^sighting--"
         },
-        "description" : {
-          "type" : "string",
-          "description" : "A description that provides more details and context about the Sighting."
+        "description": {
+          "type": "string",
+          "description": "A description that provides more details and context about the Sighting."
         },
         "first_seen": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The beginning of the time window during which the SDO referenced by the sighting_of_ref property was sighted."
         },
         "last_seen": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The end of the time window during which the SDO referenced by the sighting_of_ref property was sighted."
         },
         "count": {
@@ -42,7 +42,7 @@
         "sighting_of_ref": {
           "allOf": [
             {
-              "$ref": "../common/identifier.json"
+              "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
             },
             {
               "not": {
@@ -78,7 +78,7 @@
           "items": {
             "allOf": [
               {
-                "$ref": "../common/identifier.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
               },
               {
                 "pattern": "^observed-data--"
@@ -93,7 +93,7 @@
           "items": {
             "allOf": [
               {
-                "$ref": "../common/identifier.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
               },
               {
                 "pattern": "^(identity|location)--"

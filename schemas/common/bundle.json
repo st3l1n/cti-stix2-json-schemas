@@ -15,7 +15,7 @@
     "id": {
       "allOf": [
         {
-          "$ref": "../common/identifier.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json",
           "description": "An identifier for this bundle. The id field for the Bundle is designed to help tools that may need it for processing, but tools are not required to store or track it. "
         },
         {
@@ -31,112 +31,112 @@
           {
             "oneOf": [
               {
-                "$ref": "../sdos/attack-pattern.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/attack-pattern.json"
               },
               {
-                "$ref": "../sdos/campaign.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/campaign.json"
               },
               {
-                "$ref": "../sdos/course-of-action.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/course-of-action.json"
               },
               {
-                "$ref": "../sdos/identity.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/identity.json"
               },
               {
-                "$ref": "../sdos/indicator.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/indicator.json"
               },
               {
-                "$ref": "../sdos/infrastructure.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/infrastructure.json"
               },
               {
-                "$ref": "../sdos/intrusion-set.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/intrusion-set.json"
               },
               {
-                "$ref": "../sdos/malware.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/malware.json"
               },
               {
-                "$ref": "../sdos/malware-analysis.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/malware-analysis.json"
               },
               {
-                "$ref": "../sdos/observed-data.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/observed-data.json"
               },
               {
-                "$ref": "../sros/relationship.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sros/relationship.json"
               },
               {
-                "$ref": "../sdos/report.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/report.json"
               },
               {
-                "$ref": "../sros/sighting.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sros/sighting.json"
               },
               {
-                "$ref": "../sdos/threat-actor.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/threat-actor.json"
               },
               {
-                "$ref": "../sdos/tool.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/tool.json"
               },
               {
-                "$ref": "../sdos/vulnerability.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/vulnerability.json"
               },
               {
-                "$ref": "../observables/artifact.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/artifact.json"
               },
               {
-                "$ref": "../observables/autonomous-system.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/autonomous-system.json"
               },
               {
-                "$ref": "../observables/directory.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/directory.json"
               },
               {
-                "$ref": "../observables/domain-name.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/domain-name.json"
               },
               {
-                "$ref": "../observables/email-addr.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/email-addr.json"
               },
               {
-                "$ref": "../observables/email-message.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/email-message.json"
               },
               {
-                "$ref": "../observables/file.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/file.json"
               },
               {
-                "$ref": "../observables/ipv4-addr.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/ipv4-addr.json"
               },
               {
-                "$ref": "../observables/ipv6-addr.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/ipv6-addr.json"
               },
               {
-                "$ref": "../observables/mac-addr.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/mac-addr.json"
               },
               {
-                "$ref": "../observables/mutex.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/mutex.json"
               },
               {
-                "$ref": "../observables/network-traffic.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/network-traffic.json"
               },
               {
-                "$ref": "../observables/process.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/process.json"
               },
               {
-                "$ref": "../observables/software.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/software.json"
               },
               {
-                "$ref": "../observables/url.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/url.json"
               },
               {
-                "$ref": "../observables/user-account.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/user-account.json"
               },
               {
-                "$ref": "../observables/windows-registry-key.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/windows-registry-key.json"
               },
               {
-                "$ref": "../observables/x509-certificate.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/x509-certificate.json"
               },
               {
-                "$ref": "../common/language-content.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/language-content.json"
               },
               {
-                "$ref": "../common/marking-definition.json"
+                "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/marking-definition.json"
               }
             ]
           },
@@ -145,10 +145,10 @@
               {
                 "oneOf": [
                   {
-                    "$ref": "../common/core.json"
+                    "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
                   },
                   {
-                    "$ref": "../common/cyber-observable-core.json"
+                    "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/cyber-observable-core.json"
                   }
                 ]
               },

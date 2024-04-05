@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -35,7 +35,7 @@
           "description": "The ID of the source (from) object.",
           "allOf": [
             {
-              "$ref": "../common/identifier.json"
+              "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
             },
             {
               "not": {
@@ -48,7 +48,7 @@
           "description": "The ID of the target (to) object.",
           "allOf": [
             {
-              "$ref": "../common/identifier.json"
+              "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
             },
             {
               "not": {
@@ -58,11 +58,11 @@
           ]
         },
         "start_time": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "This optional timestamp represents the earliest time at which the Relationship between the objects exists. If this property is a future timestamp, at the time the updated property is defined, then this represents an estimate by the producer of the intelligence of the earliest time at which relationship will be asserted to be true."
         },
         "stop_time": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The latest time at which the Relationship between the objects exists. If this property is a future timestamp, at the time the updated property is defined, then this represents an estimate by the producer of the intelligence of the latest time at which relationship will be asserted to be true."
         }
       }

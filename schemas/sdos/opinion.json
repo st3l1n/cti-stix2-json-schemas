@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -37,7 +37,7 @@
           "type": "array",
           "description": "The STIX Objects (SDOs and SROs) that the opinion is being applied to.",
           "items": {
-            "$ref": "../common/identifier.json"
+            "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
           },
           "minItems": 1
         },

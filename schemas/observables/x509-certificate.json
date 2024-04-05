@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/cyber-observable-core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -26,7 +26,7 @@
           "description": "Specifies whether the certificate is self-signed, i.e., whether it is signed by the same entity whose identity it certifies."
         },
         "hashes": {
-          "$ref": "../common/hashes-type.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/hashes-type.json",
           "description": "Specifies any hashes that were calculated for the entire contents of the certificate."
         },
         "version": {
@@ -46,11 +46,11 @@
           "description": "Specifies the name of the Certificate Authority that issued the certificate."
         },
         "validity_not_before": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "Specifies the date on which the certificate validity period begins."
         },
         "validity_not_after": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "Specifies the date on which the certificate validity period ends."
         },
         "subject": {
@@ -77,19 +77,71 @@
     },
     {
       "anyOf": [
-        { "required": ["is_self_signed"] },
-        { "required": ["hashes"] },
-        { "required": ["version"] },
-        { "required": ["serial_number"] },
-        { "required": ["signature_algorithm"] },
-        { "required": ["issuer"] },
-        { "required": ["validity_not_before"] },
-        { "required": ["validity_not_after"] },
-        { "required": ["subject"] },
-        { "required": ["subject_public_key_algorithm"] },
-        { "required": ["subject_public_key_modulus"] },
-        { "required": ["subject_public_key_exponent"] },
-        { "required": ["x509_v3_extensions"] }
+        {
+          "required": [
+            "is_self_signed"
+          ]
+        },
+        {
+          "required": [
+            "hashes"
+          ]
+        },
+        {
+          "required": [
+            "version"
+          ]
+        },
+        {
+          "required": [
+            "serial_number"
+          ]
+        },
+        {
+          "required": [
+            "signature_algorithm"
+          ]
+        },
+        {
+          "required": [
+            "issuer"
+          ]
+        },
+        {
+          "required": [
+            "validity_not_before"
+          ]
+        },
+        {
+          "required": [
+            "validity_not_after"
+          ]
+        },
+        {
+          "required": [
+            "subject"
+          ]
+        },
+        {
+          "required": [
+            "subject_public_key_algorithm"
+          ]
+        },
+        {
+          "required": [
+            "subject_public_key_modulus"
+          ]
+        },
+        {
+          "required": [
+            "subject_public_key_exponent"
+          ]
+        },
+        {
+          "required": [
+            "x509_v3_extensions"
+          ]
+        }
       ]
     }
   ],
@@ -148,11 +200,11 @@
               "description": "Specifies the number of additional certificates that may appear in the path before anyPolicy is no longer permitted."
             },
             "private_key_usage_period_not_before": {
-              "$ref": "../common/timestamp.json",
+              "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
               "description": "Specifies the date on which the validity period begins for the private key, if it is different from the validity period of the certificate."
             },
             "private_key_usage_period_not_after": {
-              "$ref": "../common/timestamp.json",
+              "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
               "description": "Specifies the date on which the validity period ends for the private key, if it is different from the validity period of the certificate."
             },
             "certificate_policies": {
@@ -167,22 +219,86 @@
         },
         {
           "anyOf": [
-            { "required": ["basic_constraints"] },
-            { "required": ["name_constraints"] },
-            { "required": ["policy_constraints"] },
-            { "required": ["key_usage"] },
-            { "required": ["extended_key_usage"] },
-            { "required": ["subject_key_identifier"] },
-            { "required": ["authority_key_identifier"] },
-            { "required": ["subject_alternative_name"] },
-            { "required": ["issuer_alternative_name"] },
-            { "required": ["subject_directory_attributes"] },
-            { "required": ["crl_distribution_points"] },
-            { "required": ["inhibit_any_policy"] },
-            { "required": ["private_key_usage_period_not_before"] },
-            { "required": ["private_key_usage_period_not_after"] },
-            { "required": ["certificate_policies"] },
-            { "required": ["policy_mappings"] }
+            {
+              "required": [
+                "basic_constraints"
+              ]
+            },
+            {
+              "required": [
+                "name_constraints"
+              ]
+            },
+            {
+              "required": [
+                "policy_constraints"
+              ]
+            },
+            {
+              "required": [
+                "key_usage"
+              ]
+            },
+            {
+              "required": [
+                "extended_key_usage"
+              ]
+            },
+            {
+              "required": [
+                "subject_key_identifier"
+              ]
+            },
+            {
+              "required": [
+                "authority_key_identifier"
+              ]
+            },
+            {
+              "required": [
+                "subject_alternative_name"
+              ]
+            },
+            {
+              "required": [
+                "issuer_alternative_name"
+              ]
+            },
+            {
+              "required": [
+                "subject_directory_attributes"
+              ]
+            },
+            {
+              "required": [
+                "crl_distribution_points"
+              ]
+            },
+            {
+              "required": [
+                "inhibit_any_policy"
+              ]
+            },
+            {
+              "required": [
+                "private_key_usage_period_not_before"
+              ]
+            },
+            {
+              "required": [
+                "private_key_usage_period_not_after"
+              ]
+            },
+            {
+              "required": [
+                "certificate_policies"
+              ]
+            },
+            {
+              "required": [
+                "policy_mappings"
+              ]
+            }
           ]
         }
       ]

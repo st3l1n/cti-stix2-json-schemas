@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -21,13 +21,13 @@
           "title": "id",
           "pattern": "^tool--"
         },
-        "aliases" : {
-          "type" : "array",
+        "aliases": {
+          "type": "array",
           "description": "Alternative names used to identify this Tool.",
-          "items" : {
-            "type" : "string"
+          "items": {
+            "type": "string"
           },
-          "minItems" : 1
+          "minItems": 1
         },
         "tool_types": {
           "type": "array",
@@ -53,7 +53,7 @@
           "type": "array",
           "description": "The list of kill chain phases for which this Tool instance can be used.",
           "items": {
-            "$ref": "../common/kill-chain-phase.json"
+            "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/kill-chain-phase.json"
           },
           "minItems": 1
         }

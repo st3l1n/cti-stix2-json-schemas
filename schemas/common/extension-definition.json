@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -70,7 +70,9 @@
       },
       "then": {
         "not": {
-          "required": ["extension_properties"]
+          "required": [
+            "extension_properties"
+          ]
         }
       }
     }

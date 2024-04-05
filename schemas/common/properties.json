@@ -5,10 +5,10 @@
   "description": "Rules for custom properties",
   "patternProperties": {
     "^[a-z][a-z0-9_]{0,245}_bin$": {
-      "$ref": "../common/binary.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/binary.json"
     },
     "^[a-z][a-z0-9_]{0,245}_hex$": {
-      "$ref": "../common/hex.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/hex.json"
     },
     "^([a-z][a-z0-9_]{2,249})|id$": {
       "anyOf": [

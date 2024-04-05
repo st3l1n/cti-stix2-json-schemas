@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -25,7 +25,7 @@
           "description": "Identifies the object that this Language Content applies to.",
           "allOf": [
             {
-              "$ref": "../common/identifier.json"
+              "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/identifier.json"
             },
             {
               "not": {
@@ -35,11 +35,11 @@
           ]
         },
         "object_modified": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "Identifies the modified time of the object that this Language Content applies to."
         },
         "contents": {
-          "$ref": "../common/dictionary.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/dictionary.json",
           "description": "Contains the actual Language Content (translation)."
         }
       }

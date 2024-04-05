@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -49,16 +49,16 @@
           "type": "array",
           "description": "The list of kill chain phases for which this infrastructure is used.",
           "items": {
-            "$ref": "../common/kill-chain-phase.json"
+            "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/kill-chain-phase.json"
           },
           "minItems": 1
         },
         "first_seen": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The time that this infrastructure was first seen performing malicious activities."
         },
         "last_seen": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The time that this infrastructure was last seen performing malicious activities."
         }
       }

@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -41,27 +41,27 @@
           "type": "string",
           "description": "The detection pattern for this indicator."
         },
-        "pattern_type" : {
-          "type" : "string",
+        "pattern_type": {
+          "type": "string",
           "description": "The type of pattern used in this indicator."
         },
-        "pattern_version" : {
-          "type" : "string",
+        "pattern_version": {
+          "type": "string",
           "description": "The version of the pattern that is used."
         },
         "valid_from": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The time from which this indicator should be considered valuable intelligence."
         },
         "valid_until": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/timestamp.json",
           "description": "The time at which this indicator should no longer be considered valuable intelligence."
         },
         "kill_chain_phases": {
           "type": "array",
           "description": "The phases of the kill chain that this indicator detects.",
           "items": {
-            "$ref": "../common/kill-chain-phase.json"
+            "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/kill-chain-phase.json"
           },
           "minItems": 1
         }
