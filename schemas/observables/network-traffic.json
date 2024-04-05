@@ -1,5 +1,5 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/observables/network-traffic.json",
+  "$id": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/observables/network-traffic.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "network-traffic",
   "description": "The Network Traffic Object represents arbitrary network traffic that originates from a source and is addressed to a destination.",

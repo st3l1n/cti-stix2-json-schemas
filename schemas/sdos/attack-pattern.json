@@ -1,5 +1,5 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/sdos/attack-pattern.json",
+  "$id": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/attack-pattern.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "attack-pattern",
   "description": "Attack Patterns are a type of TTP that describe ways that adversaries attempt to compromise targets. ",

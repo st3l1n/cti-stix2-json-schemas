@@ -1,5 +1,5 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/sdos/indicator.json",
+  "$id": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/sdos/indicator.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "indicator",
   "description": "Indicators contain a pattern that can be used to detect suspicious or malicious cyber activity.",
