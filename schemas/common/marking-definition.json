@@ -59,7 +59,7 @@
       "type": "array",
       "description": "The granular_markings property specifies a list of granular markings applied to this object.",
       "items": {
-        "$ref": "granular-marking.json"
+        "$ref": "https://raw.githubusercontent.com/st3l1n/cti-stix2-json-schemas/master/schemas/common/granular-marking.json"
       },
       "minItems": 1
     },
